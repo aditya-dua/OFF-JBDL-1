@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,6 +14,8 @@ public class StreamMainExample {
 				.map(x->x*x)
 				.map(x-> x%5)
 				.collect(Collectors.toList());
+		
+		
 		
 		
 		for (int i = 0; i < squareList.size(); i++) {
@@ -34,6 +34,16 @@ public class StreamMainExample {
 			System.out.println("Number:"+numList.get(i)+" Square:"+squareList.get(i));	
 		}
 		
+		/*
+		 * 1,2,3,4
+		 * Sum
+		 * 0
+		 * 0+1 =1,
+		 * 1+2=3...
+		 */
+		int sum = numList.stream().reduce(0,(total,x)->total+x);
+		
+		System.out.println(sum);
 		//marksList.parallelStream().
 	
 	}
