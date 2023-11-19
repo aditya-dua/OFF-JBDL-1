@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.demo.entity.EmployeeEntity;
 import com.example.demo.model.CreateEmployeeRequestModel;
@@ -64,7 +63,6 @@ public class EmployeeService {
 		
 		System.out.println("Map Size:"+empHM.size());
 		
-		
 		return "Success";
 	}
 	
@@ -93,4 +91,13 @@ public class EmployeeService {
 		
 		return response;
 	}
+	
+	/*
+	 * Update function...input: id, {updated fields} output: final updated employee object
+	 * Delete function input: id, output: {}employee
+	 * 
+	 * CSV file....
+	 * import the csv file into the Hashmap
+	 * 
+	 */
 }
