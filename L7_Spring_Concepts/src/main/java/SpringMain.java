@@ -30,6 +30,9 @@ public class SpringMain {
 		Employee emp = (Employee) context.getBean("emp");
 		System.out.println(emp);
 		
+		Employee emp1 = (Employee) context.getBean("emp");
+		System.out.println(emp1);
+		
 	}
 
 }
