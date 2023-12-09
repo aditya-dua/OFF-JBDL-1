@@ -1,4 +1,4 @@
-package l11_Hibernate_Mapping;
+package l11_Hibernate_Mapping.one2one;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

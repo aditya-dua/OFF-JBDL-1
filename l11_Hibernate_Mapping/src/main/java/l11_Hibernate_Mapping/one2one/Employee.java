@@ -1,4 +1,4 @@
-package l11_Hibernate_Mapping;
+package l11_Hibernate_Mapping.one2one;
 
 public class Employee {
 	
