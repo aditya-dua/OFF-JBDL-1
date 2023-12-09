@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="l11_Hibernate_Mapping.Address" table="o2o-address">
+	
+		<id name="id" type="int" column = "id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="street" column = "street" type="string"></property>
+		<property name="state" column = "state" type="string"></property>
+		<property name="country" column = "country" type="string"></property>
+	
+		<one-to-one name="emp" class = "l11_Hibernate_Mapping.Employee" ></one-to-one>
+	
+	</class>
+
+</hibernate-mapping>

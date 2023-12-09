@@ -14,7 +14,8 @@
 		<property name="hbm2ddl.auto">create-drop</property>
 		
 		
-		<mapping class="l10_introduction_to_hibernate.EmployeeAnnotation"/>
+		<mapping resource="employee.hbm.xml"/>
+		<mapping resource="address.hbm.xml"/>
 	</session-factory>
 
 </hibernate-configuration>

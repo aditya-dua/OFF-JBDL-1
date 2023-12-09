@@ -5,7 +5,7 @@
 
 <hibernate-mapping>
 
-	<class name="l10_introduction_to_hibernate.Employee" table="hibernate-employee">
+	<class name="l11_Hibernate_Mapping.Employee" table="o2o-employee">
 	
 		<id name="id" type="int" column = "id">
 			<generator class="native"></generator>
@@ -14,6 +14,8 @@
 		<property name="name" column = "name" type="string"></property>
 	
 		<property name="salary" column = "salary" type="int"></property>
+		
+		<one-to-one name="address" class="l11_Hibernate_Mapping.Address" constrained="true" cascade="save-update" ></one-to-one>
 	
 	</class>
 
