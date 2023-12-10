@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="l11_Hibernate_Mapping.many2many.Teacher" table="m2m-teacher">
+	
+		<id name="id" type="int" column = "id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="name" column = "name" type="string"></property>
+	
+		<property name="salary" column = "salary" type="int"></property>
+		
+		<set name="courses" table="teacher_course_mapping" fetch="select" >
+			<key>
+				<column name="teacher_id"></column>
+			</key>
+			
+			<many-to-many class="l11_Hibernate_Mapping.many2many.Course" column = "course_id"></many-to-many>
+		</set>
+	</class>
+
+</hibernate-mapping>
