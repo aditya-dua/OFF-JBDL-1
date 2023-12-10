@@ -14,8 +14,8 @@
 		<property name="hbm2ddl.auto">create-drop</property>
 		
 		
-		<mapping class="l11_Hibernate_Mapping.one2one_annotation.Employee"/>
-		<mapping class="l11_Hibernate_Mapping.one2one_annotation.Address"/>
+		<mapping class="l11_Hibernate_Mapping.many2many_annotation.Teacher"/>
+		<mapping class="l11_Hibernate_Mapping.many2many_annotation.Course"/>
 		
 	</session-factory>
 
