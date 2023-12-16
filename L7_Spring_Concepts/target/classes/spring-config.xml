@@ -14,6 +14,9 @@
 		<constructor-arg index="0" ref="address"></constructor-arg>
 	</bean>
 	
+	<bean name ="connection" class="DatabaseCreationMain">
+	</bean>
+	
 	<bean name="address" class ="Address" scope="prototype">
 		<constructor-arg index = "0" value="1"></constructor-arg>
 		<constructor-arg index = "1" value="Street "></constructor-arg>

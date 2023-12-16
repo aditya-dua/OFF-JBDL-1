@@ -33,6 +33,10 @@ public class SpringMain {
 		Employee emp1 = (Employee) context.getBean("emp");
 		System.out.println(emp1);
 		
+		DatabaseCreationMain connection = (DatabaseCreationMain) context.getBean("connection");
+		
+		connection.getConnection();
+		
 	}
 
 }
